@@ -1,0 +1,22 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#171d17"><meta name="description" content="Огородный Замес: Последний урожай. Визуальная новелла о заброшенной ферме и её новых жителях."><title>Огородный Замес — Последний урожай</title><link rel="stylesheet" href="style.css"></head><body>
+<main id="app">
+<div id="scene-bg" aria-hidden="true"></div><div class="vignette" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+<section id="title-screen" aria-label="Главное меню">
+<header class="brand"><span class="mark">ОЗ<span>07</span></span><span>ИСТОРИИ СНТ<br>«САМО ВЫРОСЛО»</span></header>
+<div class="title-copy"><p class="eyebrow"><span></span> ВИЗУАЛЬНАЯ НОВЕЛЛА</p><h1>Огородный<br>Замес<span>Последний урожай</span></h1><p class="intro">Ты приехал восстановить старую ферму.<br>И найти место, которое назовёшь домом.</p><div class="title-actions"><button class="primary" id="new-game">Начать историю <span>↗</span></button><button class="continue" id="continue-game" hidden>Продолжить <span>→</span></button></div><nav class="menu-links" aria-label="Меню"><button data-panel="saves">Сохранения</button><button data-panel="settings">Настройки</button><button data-panel="about">Об истории</button></nav></div>
+<aside class="title-note"><span>ПЕРХУРОВО • УЧАСТОК №07</span><p>«Не верь урожаю,<br>который не посадил».</p><small>Из письма Прохора Шляпина</small></aside>
+<footer class="title-footer"><span>ТВОЯ ФЕРМА <i>·</i> ТВОЯ ИСТОРИЯ</span><span>Дача. Лес. Что-то под землёй.</span></footer>
+</section>
+<section id="game-screen" hidden aria-label="История">
+<header class="game-header"><button id="home-button" class="small-brand" aria-label="Главное меню">ОЗ <span>ПОСЛЕДНИЙ УРОЖАЙ</span></button><div class="chapter-head"><span id="chapter-number"></span><strong id="chapter-name"></strong></div><button class="icon-button" data-panel="settings" aria-label="Настройки">☷</button></header>
+<div class="location"><span class="location-dot"></span><span id="location-name"></span></div><div class="chapter-progress" aria-hidden="true"><div id="progress-fill"></div></div>
+<figure id="portrait" hidden><img id="portrait-image" alt=""></figure>
+<div id="chapter-card" aria-hidden="true"><span id="chapter-card-num"></span><h2 id="chapter-card-title"></h2></div>
+<div id="toast" role="status"></div>
+<section class="dialogue" aria-label="Диалог"><div class="speaker-line"><span id="speaker"></span><span id="speaker-role"></span><span class="line-count" id="line-count"></span></div><div id="text-area" tabindex="0" role="button" aria-label="Показать реплику или продолжить"><p id="dialogue-text"></p></div><div id="choices"></div><div id="activity"></div><div class="dialogue-bottom"><span id="scene-hint">Пробел или нажатие — дальше</span><button id="next-button">Далее <span>→</span></button></div></section>
+<footer class="game-toolbar"><div><button id="back-button" aria-label="Вернуться на шаг">← <span>Назад</span></button><button data-panel="history">История</button><button id="auto-button" aria-pressed="false">Авто</button></div><div><button data-panel="journal">Тетрадка <span id="clue-count">0</span></button><button data-panel="saves">Сохранить</button><button id="sound-button" aria-pressed="false">Звук выкл.</button></div></footer>
+</section>
+<section id="ending-screen" hidden><p class="eyebrow">КОНЕЦ ИСТОРИИ <span id="ending-number"></span></p><h2 id="ending-title"></h2><p id="ending-description"></p><div id="ending-stats"></div><blockquote>Огород можно забросить.<br>То, что в тебе выросло, — уже нет.</blockquote><div class="ending-actions"><button class="primary" id="rechoose">Вернуться к решению ↗</button><button id="ending-menu">Главное меню</button><button data-panel="about">Авторы и материалы</button></div><p class="ending-foot">ОГОРОДНЫЙ ЗАМЕС · ПОСЛЕДНИЙ УРОЖАЙ</p></section>
+<dialog id="panel"><header><div><p class="eyebrow">ОГОРОДНЫЙ ЗАМЕС</p><h2 id="panel-title"></h2></div><button id="close-panel" aria-label="Закрыть">✕</button></header><div id="panel-body"></div></dialog>
+<noscript>Для запуска новеллы включи JavaScript в браузере.</noscript>
+</main><script src="story.js"></script><script src="game.js"></script></body></html>
